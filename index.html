@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Lekhika Sahu - Full Stack Developer</title>
+    <meta name="description"
+        content="Professional portfolio of John Doe, a passionate full stack developer specializing in modern web technologies.">
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💼</text></svg>">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Header/Navigation -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <div class="nav__logo">
+                <span class="nav__logo-text">Portfolio</span>
+            </div>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">Skills</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#portfolio" class="nav__link">Portfolio</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <i class="fas fa-times nav__close" id="nav-close"></i>
+            </div>
+
+            <div class="nav__actions">
+                <i class="fas fa-moon change-theme" id="theme-button"></i>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main">
+        <!-- Home Section -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__content">
+                    <div class="home__data">
+                        <h3 class="home__subtitle">Hello, I'm</h3>
+                        <h1 class="home__title">Lekhika Sahu</h1>
+                        <h3 class="home__description">Full Stack Developer</h3>
+                        <p class="home__info">
+                            Passionate about creating exceptional digital experiences with clean code and modern design.
+                        </p>
+                        <div class="home__buttons">
+                            <a href="#contact" class="button">
+                                <i class="fas fa-paper-plane"></i>
+                                Say Hello
+                            </a>
+                            <a href="#portfolio" class="button button--ghost">
+                                <i class="fas fa-eye"></i>
+                                My Work
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="home__social">
+                        <a href="https://github.com/Lekhika123" target="_blank" class="home__social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/lekhika82" target="_blank" class="home__social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:lekhikasahu391@gmail.com" class="home__social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467">
+                        <mask id="mask0" mask-type="alpha">
+                            <path
+                                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 470.016 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path
+                                d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 470.016 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                            <image class="home__blob-img" x="50" y="45" width="100%" height="100%"
+                                href="./assests/pic.png" />
+                        </g>
+                    </svg>
+                </div>
+            </div>
+
+            <a href="#about" class="home__scroll">
+                <i class="fas fa-mouse home__scroll-mouse"></i>
+                <span class="home__scroll-name">Scroll down</span>
+                <i class="fas fa-arrow-down home__scroll-arrow"></i>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+            <h2 class="section__title">About Me</h2>
+            <span class="section__subtitle">My introduction</span>
+
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <p class="about__description">
+                        Hi! I'm Lekhika Sahu, a B.Tech CSE student at JEC Jabalpur and
+                        a passionate frontend developer. I enjoy building responsive,
+                        user-friendly web interfaces using HTML, CSS, JavaScript,
+                        and React. I'm also exploring backend development and love solving
+                        DSA problems to improve my logical thinking and coding skills.
+                    </p>
+
+                    <div class="about__info">
+                        <div>
+                            <span class="about__info-title">250+</span>
+                            <span class="about__info-name">DSA questions<br>completed</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">2+</span>
+                            <span class="about__info-name">Years<br>learning experience</span>
+                        </div>
+                        <div>
+                            <span class="about__info-title">3+</span>
+                            <span class="about__info-name">Technology<br>explored</span>
+                        </div>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a download="new" href="Resume.pdf" class="button button--flex">
+                            Download CV<i class="fas fa-download button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills section" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <span class="section__subtitle">My technical level</span>
+
+            <div class="skills__container container grid">
+                <div class="skills__content skills__open">
+                    <div class="skills__header">
+                        <i class="fas fa-language skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Languages</h1>
+                            <span class="skills__subtitle">From Syntax to Solutions</span>
+                        </div>
+                        <i class="fas fa-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Java</h3>
+                                <span class="skills__number">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__90"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Python</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__80"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JavaScript</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__85"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">SQL/MySQL</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__85"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="fas fa-code skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Frontend Developer</h1>
+                            <span class="skills__subtitle">React. CSS. JavaScript.</span>
+                        </div>
+                        <i class="fas fa-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">HTML</h3>
+                                <span class="skills__number">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__90"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">CSS</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__85"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">JavaScript</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__80"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">React</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__85"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Bootstrap</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__85"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Tailwind CSS</h3>
+                                <span class="skills__number">90%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__90"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="fas fa-server skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Backend Developer</h1>
+                            <span class="skills__subtitle">Clean Logic, Reliable Systems</span>
+                        </div>
+                        <i class="fas fa-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Node.js</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__80"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Express js</h3>
+                                <span class="skills__number">75%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__75"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">MongoDB</h3>
+                                <span class="skills__number">80%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__80"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills__content skills__close">
+                    <div class="skills__header">
+                        <i class="fas fa-screwdriver-wrench skills__icon"></i>
+                        <div>
+                            <h1 class="skills__title">Tools</h1>
+                            <span class="skills__subtitle">Exploring Developer Tools to Boost Productivity</span>
+                        </div>
+                        <i class="fas fa-angle-down skills__arrow"></i>
+                    </div>
+
+                    <div class="skills__list grid">
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Git/GitHub</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__85"></span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__titles">
+                                <h3 class="skills__name">Vs Code</h3>
+                                <span class="skills__number">85%</span>
+                            </div>
+                            <div class="skills__bar">
+                                <span class="skills__percentage skills__85"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section class="portfolio section" id="portfolio">
+            <h2 class="section__title">Portfolio</h2>
+            <span class="section__subtitle">My recent work</span>
+
+            <div class="portfolio__container container">
+                <div class="portfolio__filters">
+                    <span class="portfolio__item portfolio__item-active" data-target="all">All</span>
+                    <span class="portfolio__item" data-target="web">Web</span>
+                    <span class="portfolio__item" data-target="python">Python</span>
+                    <span class="portfolio__item" data-target="java">Java</span>
+                </div>
+
+                <div class="portfolio__content grid" data-content id="portfolio-content">
+                    <div class="portfolio__project" data-category="web">
+                        <div class="portfolio__project-content">
+                            <div class="portfolio__project-img">
+                                <img src="./assests/Blog.png" alt="">
+                            </div>
+                            <div class="portfolio__project-data">
+                                <h3 class="portfolio__project-title">Blog With Appwrite</h3>
+                                <p class="portfolio__project-description">
+                                    Built a full-stack web app using Appwrite for backend services like
+                                    authentication, database, and storage.
+                                </p>
+                                <div class="portfolio__project-buttons">
+                                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="fas fa-arrow-right button__icon"></i>
+                                    </a> -->
+                                    <a href="https://github.com/Lekhika123/MegaBlog-React"
+                                        class="button button--flex button--small button--link portfolio__button">
+                                        Code
+                                        <i class="fab fa-github button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__project" data-category="web">
+                        <div class="portfolio__project-content">
+                            <div class="portfolio__project-img">
+                                <img src="./assests/LMS.png" alt="">
+                            </div>
+                            <div class="portfolio__project-data">
+                                <h3 class="portfolio__project-title">Learning Management System</h3>
+                                <p class="portfolio__project-description">
+                                    Developed a responsive Learning Management System with course listing, user auth,
+                                    and mock payment flow.
+                                </p>
+                                <div class="portfolio__project-buttons">
+                                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="fas fa-arrow-right button__icon"></i>
+                                    </a> -->
+                                    <a href="https://github.com/Lekhika123/LMS-frontend"
+                                        class="button button--flex button--small button--link portfolio__button">
+                                        Code
+                                        <i class="fab fa-github button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__project" data-category="web">
+                        <div class="portfolio__project-content">
+                            <div class="portfolio__project-img">
+                                <img src="./assests/31053524_7756284.jpg" alt="">
+                            </div>
+                            <div class="portfolio__project-data">
+                                <h3 class="portfolio__project-title">Pokedex</h3>
+                                <p class="portfolio__project-description">
+                                    Built a Pokédex app using Pokémon API to display Pokémon details with search and
+                                    filter features.
+                                </p>
+                                <div class="portfolio__project-buttons">
+                                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="fas fa-arrow-right button__icon"></i>
+                                    </a> -->
+                                    <a href="https://github.com/Lekhika123/Pokedex"
+                                        class="button button--flex button--small button--link portfolio__button">
+                                        Code
+                                        <i class="fab fa-github button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__project" data-category="web">
+                        <div class="portfolio__project-content">
+                            <div class="portfolio__project-img">
+                                <img src="./assests/Personal Portfolio.png" alt="">
+                            </div>
+                            <div class="portfolio__project-data">
+                                <h3 class="portfolio__project-title">Peronal Portfolio</h3>
+                                <p class="portfolio__project-description">
+                                    Created a personal portfolio using HTML, CSS, and JavaScript to showcase projects,
+                                    skills, and contact info.
+                                </p>
+                                <div class="portfolio__project-buttons">
+                                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="fas fa-arrow-right button__icon"></i>
+                                    </a> -->
+                                    <a href="#"
+                                        class="button button--flex button--small button--link portfolio__button">
+                                        Code
+                                        <i class="fab fa-github button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__project" data-category="python">
+                        <div class="portfolio__project-content">
+                            <div class="portfolio__project-img">
+                                <img src="./assests/Parking Area.png" alt="">
+                            </div>
+                            <div class="portfolio__project-data">
+                                <h3 class="portfolio__project-title">Parking Slot Detection</h3>
+                                <p class="portfolio__project-description">
+                                    Implemented parking slot detection using YOLO to identify available slots in
+                                    real-time from video input.
+                                </p>
+                                <div class="portfolio__project-buttons">
+                                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="fas fa-arrow-right button__icon"></i>
+                                    </a> -->
+                                    <a href="https://github.com/Lekhika123/Parking-Detection-Yolo"
+                                        class="button button--flex button--small button--link portfolio__button">
+                                        Code
+                                        <i class="fab fa-github button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__project" data-category="python">
+                        <div class="portfolio__project-content">
+                            <div class="portfolio__project-img">
+                                <img src="./assests/MedicalHelper.png" alt="">
+                            </div>
+                            <div class="portfolio__project-data">
+                                <h3 class="portfolio__project-title">Medical Helper</h3>
+                                <p class="portfolio__project-description">
+                                    Built a Medical Helper tool that gives health risk decisions based
+                                    on patient data and uses OCR with reminders for medicine intake.
+                                </p>
+                                <div class="portfolio__project-buttons">
+                                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="fas fa-arrow-right button__icon"></i>
+                                    </a> -->
+                                    <a href="https://github.com/Lekhika123/Medical-Helper"
+                                        class="button button--flex button--small button--link portfolio__button">
+                                        Code
+                                        <i class="fab fa-github button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio__project" data-category="web">
+                        <div class="portfolio__project-content">
+                            <div class="portfolio__project-img">
+                                <img src="./assests/Calculator-bro.png" alt="">
+                            </div>
+                            <div class="portfolio__project-data">
+                                <h3 class="portfolio__project-title">Calculator</h3>
+                                <p class="portfolio__project-description">
+                                    Built a basic calculator using HTML, CSS, and JavaScript to perform standard
+                                    arithmetic operations with a clean UI.
+                                </p>
+                                <div class="portfolio__project-buttons">
+                                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="fas fa-arrow-right button__icon"></i>
+                                    </a> -->
+                                    <a href="https://github.com/Lekhika123/Codsoft-Web-D-Task3"
+                                        class="button button--flex button--small button--link portfolio__button">
+                                        Code
+                                        <i class="fab fa-github button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio__project" data-category="java">
+                        <div class="portfolio__project-content">
+                            <div class="portfolio__project-img">
+                                <img src="./assests/Atm.png" alt="">
+                            </div>
+                            <div class="portfolio__project-data">
+                                <h3 class="portfolio__project-title">Atm Interface</h3>
+                                <p class="portfolio__project-description">
+                                    Developed an ATM interface in Java with features like balance check, deposit, and
+                                    withdrawal using Java Swing for GUI.
+                                </p>
+                                <div class="portfolio__project-buttons">
+                                    <!-- <a href="#" class="button button--flex button--small portfolio__button">
+                                        Demo
+                                        <i class="fas fa-arrow-right button__icon"></i>
+                                    </a> -->
+                                    <a href="https://github.com/Lekhika123/CodSoft-task-3"
+                                        class="button button--flex button--small button--link portfolio__button">
+                                        Code
+                                        <i class="fab fa-github button__icon"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+            <span class="section__subtitle">Get in touch</span>
+
+            <div class="contact__container container grid">
+                <div class="contact__information">
+                    <div class="contact__info">
+                        <i class="fas fa-phone contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Call Me</h3>
+                            <span class="contact__subtitle">+91 81202 80623</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__info">
+                        <i class="fas fa-envelope contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Email</h3>
+                            <span class="contact__subtitle">lekhikasahu391@gmail.com</span>
+                        </div>
+                    </div>
+
+                    <div class="contact__info">
+                        <i class="fas fa-map-marker-alt contact__icon"></i>
+                        <div>
+                            <h3 class="contact__title">Location</h3>
+                            <span class="contact__subtitle">Itarsi,Madhya Pradesh,India</span>
+                        </div>
+                    </div>
+                </div>
+
+                <form action="" class="contact__form grid">
+                    <div class="contact__inputs grid">
+                        <div class="contact__content">
+                            <label for="name" class="contact__label">Name</label>
+                            <input type="text" id="name" class="contact__input" required>
+                            <span class="contact__error" id="name-error"></span>
+                        </div>
+
+                        <div class="contact__content">
+                            <label for="email" class="contact__label">Email</label>
+                            <input type="email" id="email" class="contact__input" required>
+                            <span class="contact__error" id="email-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="subject" class="contact__label">Subject</label>
+                        <input type="text" id="subject" class="contact__input" required>
+                        <span class="contact__error" id="subject-error"></span>
+                    </div>
+
+                    <div class="contact__content">
+                        <label for="message" class="contact__label">Message</label>
+                        <textarea id="message" cols="0" rows="7" class="contact__input" required></textarea>
+                        <span class="contact__error" id="message-error"></span>
+                    </div>
+
+                    <div>
+                        <button type="submit" class="button button--flex">
+                            Send Message
+                            <i class="fas fa-paper-plane button__icon"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__bg">
+            <div class="footer__container container grid">
+                <div>
+                    <h1 class="footer__title">Lekhika Sahu</h1>
+                    <span class="footer__subtitle">Full Stack Developer</span>
+                </div>
+
+                <ul class="footer__links">
+                    <li>
+                        <a href="#about" class="footer__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="footer__link">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="footer__link">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="footer__socials">
+                    <a href="https://github.com/Lekhika123" target="_blank" class="footer__social">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/lekhika82" target="_blank" class="footer__social">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:lekhikasahu391@gmail.com" class="footer__social">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; 2024 Lekhika Sahu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <a href="#" class="scrollup" id="scroll-up">
+        <i class="fas fa-arrow-up scrollup__icon"></i>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
+
+<!-- <svg width="100%" height="200" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="100%" height="100%" fill="var(--first-color-lighter)" />
+
+
+  <rect x="60" y="40" width="60" height="40" fill="var(--first-color)" rx="6" opacity="0.7" />
+  <rect x="140" y="60" width="70" height="50" fill="var(--first-color)" rx="6" opacity="0.5" />
+  <rect x="230" y="45" width="50" height="40" fill="var(--first-color)" rx="6" opacity="0.8" />
+
+  
+  <rect x="310" y="30" width="50" height="35" fill="var(--first-color)" rx="5" opacity="0.6" />
+  <rect x="325" y="70" width="20" height="4" fill="var(--text-color-light)" rx="2" />
+
+  
+  <rect x="50" y="150" width="300" height="20" fill="var(--text-color-light)" rx="10" />
+</svg>  -->
